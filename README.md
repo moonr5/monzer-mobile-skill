@@ -30,7 +30,7 @@ flowchart LR
   P --> H[HANDOVER.md]
 ```
 
-**Paste this to any agent** (Cursor, Claude Code, Codex, Copilot):
+**Paste this to any agent** (Cursor, Claude Code, Codex, Copilot, Windsurf):
 
 ```
 Read this file fully and obey it as the only workflow:
@@ -44,6 +44,41 @@ Write docs under WORKSPACE/docs/.
 ```
 
 Install into your own skills folder: see [INSTALL.md](INSTALL.md).
+
+---
+
+## Contributors
+
+**Author:** [Monzer](https://github.com/moonr5) (`@moonr5`)
+
+Cursor is a git contributor (`Co-authored-by: Cursor`). The other agents are hosts of the same skill — they are credited here so the repo is not Cursor-only.
+
+<p align="center"><img src="docs/images/contributors.svg" alt="Monzer author, Cursor contributor, Claude Codex Copilot Windsurf agents" width="920"></p>
+
+<p align="center">
+  <a href="https://github.com/moonr5"><img src="https://github.com/moonr5.png?size=96" width="72" height="72" alt="Monzer"></a>
+  &nbsp;
+  <a href="https://github.com/cursoragent"><img src="https://github.com/cursoragent.png?size=96" width="72" height="72" alt="Cursor"></a>
+  &nbsp;
+  <a href="https://github.com/anthropics"><img src="https://github.com/anthropics.png?size=96" width="72" height="72" alt="Claude"></a>
+  &nbsp;
+  <a href="https://github.com/openai"><img src="https://github.com/openai.png?size=96" width="72" height="72" alt="Codex"></a>
+  &nbsp;
+  <a href="https://github.com/features/copilot"><img src="https://github.com/github.png?size=96" width="72" height="72" alt="Copilot"></a>
+  &nbsp;
+  <a href="https://github.com/Exafunction"><img src="https://github.com/Exafunction.png?size=96" width="72" height="72" alt="Windsurf"></a>
+</p>
+
+| Who | Role |
+| --- | --- |
+| [Monzer](https://github.com/moonr5) | Author |
+| [Cursor](https://github.com/cursoragent) | Agent contributor |
+| [Claude Code](https://claude.com/claude-code) | Agent host |
+| [OpenAI Codex](https://developers.openai.com/codex) | Agent host |
+| [GitHub Copilot](https://github.com/features/copilot) | Agent host |
+| [Windsurf](https://windsurf.com) | Agent host |
+
+Full table and install paths: [CONTRIBUTORS.md](CONTRIBUTORS.md) · [INSTALL.md](INSTALL.md).
 
 ---
 
@@ -121,9 +156,10 @@ flowchart LR
 ```
 SKILL.md                 ← agents start here
 AGENTS.md                ← Codex / AGENTS.md hosts
-INSTALL.md               ← Cursor, Claude Code, Copilot
+INSTALL.md               ← Cursor, Claude, Codex, Copilot, Windsurf
+CONTRIBUTORS.md          ← author + Cursor + the other agents
 docs/images/             ← posters + SVG diagrams
 docs/VISUAL.md           ← interactive mermaid map
 references/              ← PROGRESS + deliverable templates
-skills/                  ← 23 bundled leaves
+skills/                  ← bundled leaves
 ```

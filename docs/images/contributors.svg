@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" role="img" aria-labelledby="t d">
+  <title id="t">Contributors and agent hosts</title>
+  <desc id="d">Monzer is the author. Cursor is a contributor. Claude Code, Codex, Copilot, and Windsurf also run this skill.</desc>
+  <rect width="960" height="280" fill="#FFFFFF"/>
+  <text x="480" y="36" fill="#1A1814" font-family="Georgia, serif" font-size="20" text-anchor="middle">Author · Cursor · the other agents</text>
+  <g font-family="ui-sans-serif, system-ui" text-anchor="middle">
+    <rect x="24" y="64" width="144" height="160" rx="14" fill="#C6A15B"/>
+    <text x="96" y="108" fill="#1A1814" font-size="12">AUTHOR</text>
+    <text x="96" y="142" fill="#1A1814" font-size="16">Monzer</text>
+    <text x="96" y="166" fill="#3A3220" font-size="12">@moonr5</text>
+    <rect x="180" y="64" width="144" height="160" rx="14" fill="#121418"/>
+    <text x="252" y="108" fill="#C6A15B" font-size="12">CONTRIBUTOR</text>
+    <text x="252" y="142" fill="#FFFFFF" font-size="16">Cursor</text>
+    <text x="252" y="166" fill="#B8B2A6" font-size="12">cursoragent</text>
+    <rect x="336" y="64" width="144" height="160" rx="14" fill="#1F4E5A"/>
+    <text x="408" y="108" fill="#F6F3EC" font-size="12">AGENT</text>
+    <text x="408" y="142" fill="#FFFFFF" font-size="16">Claude</text>
+    <text x="408" y="166" fill="#D8E6E4" font-size="12">Claude Code</text>
+    <rect x="492" y="64" width="144" height="160" rx="14" fill="#121418"/>
+    <text x="564" y="108" fill="#C6A15B" font-size="12">AGENT</text>
+    <text x="564" y="142" fill="#FFFFFF" font-size="16">Codex</text>
+    <text x="564" y="166" fill="#B8B2A6" font-size="12">OpenAI</text>
+    <rect x="648" y="64" width="144" height="160" rx="14" fill="#1F4E5A"/>
+    <text x="720" y="108" fill="#F6F3EC" font-size="12">AGENT</text>
+    <text x="720" y="142" fill="#FFFFFF" font-size="16">Copilot</text>
+    <text x="720" y="166" fill="#D8E6E4" font-size="12">GitHub</text>
+    <rect x="804" y="64" width="132" height="160" rx="14" fill="#121418"/>
+    <text x="870" y="108" fill="#C6A15B" font-size="12">AGENT</text>
+    <text x="870" y="142" fill="#FFFFFF" font-size="16">Windsurf</text>
+    <text x="870" y="166" fill="#B8B2A6" font-size="12">Codeium</text>
+  </g>
+  <text x="480" y="254" fill="#5A564C" font-family="ui-sans-serif, system-ui" font-size="13" text-anchor="middle">Same SKILL.md. Any of these hosts can run it. See INSTALL.md.</text>
+</svg>

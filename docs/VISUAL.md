@@ -105,4 +105,16 @@ flowchart LR
   SKILL -->|build| APP
 ```
 
-Posters live in [images/](images/).
+## Who is credited
+
+```mermaid
+flowchart LR
+  M[Monzer · author]
+  C[Cursor · contributor]
+  A[Claude · Codex · Copilot · Windsurf]
+  M --> SKILL[SKILL.md]
+  C --> SKILL
+  A --> SKILL
+```
+
+Posters live in [images/](images/). Full names: [CONTRIBUTORS.md](../CONTRIBUTORS.md).
