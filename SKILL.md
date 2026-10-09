@@ -5,7 +5,8 @@ description: Build a premium, production-ready iOS and Android mobile app (React
 
 # Mobile App Builder — Master Skill (React Native + Expo)
 
-Any AI agent can run this. There is no extra installer. **Do not run `npx skills add`.**
+Any AI agent can run this. There is no extra installer. **Do not run `npx skills add`.**  
+Humans: start at [README.md](README.md) (images + diagrams). Agents: stay in this file.
 
 ## 0. AGENT CONTRACT — do this before anything else
 

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-labelledby="t d">
+  <title id="t">How any AI agent runs this skill</title>
+  <desc id="d">Read SKILL.md, set two paths, copy the progress table, then start M0.</desc>
+  <rect width="960" height="300" fill="#FFFFFF"/>
+  <text x="480" y="36" fill="#1A1814" font-family="Georgia, serif" font-size="20" text-anchor="middle">Any AI agent · four steps</text>
+  <g font-family="ui-sans-serif, system-ui" text-anchor="middle">
+    <rect x="32" y="72" width="200" height="150" rx="14" fill="#121418"/>
+    <text x="132" y="112" fill="#C6A15B" font-size="13">1</text>
+    <text x="132" y="142" fill="#FFFFFF" font-size="16">Read SKILL.md</text>
+    <text x="132" y="168" fill="#B8B2A6" font-size="12">This folder is SKILL_ROOT</text>
+    <rect x="264" y="72" width="200" height="150" rx="14" fill="#1F4E5A"/>
+    <text x="364" y="112" fill="#F6F3EC" font-size="13">2</text>
+    <text x="364" y="142" fill="#FFFFFF" font-size="16">Print two paths</text>
+    <text x="364" y="168" fill="#D8E6E4" font-size="12">SKILL_ROOT + WORKSPACE</text>
+    <rect x="496" y="72" width="200" height="150" rx="14" fill="#C6A15B"/>
+    <text x="596" y="112" fill="#1A1814" font-size="13">3</text>
+    <text x="596" y="142" fill="#1A1814" font-size="16">Copy PROGRESS</text>
+    <text x="596" y="168" fill="#3A3220" font-size="12">into WORKSPACE/docs/</text>
+    <rect x="728" y="72" width="200" height="150" rx="14" fill="#121418"/>
+    <text x="828" y="112" fill="#C6A15B" font-size="13">4</text>
+    <text x="828" y="142" fill="#FFFFFF" font-size="16">Start M0</text>
+    <text x="828" y="168" fill="#B8B2A6" font-size="12">Do not design screens yet</text>
+  </g>
+  <text x="480" y="266" fill="#5A564C" font-family="ui-sans-serif, system-ui" font-size="13" text-anchor="middle">Write product code in WORKSPACE. Never write the app inside the skill folder.</text>
+</svg>

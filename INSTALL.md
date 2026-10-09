@@ -1,7 +1,8 @@
 # Install this skill for any agent
 
-This folder is the skill. The file to execute is `SKILL.md`.  
-Do not run `npx skills add`. Leaf skills are already in `skills/`.
+This folder is **one** skill. The file to execute is `SKILL.md`.  
+Do not run `npx skills add`. Leaf skills are already in `skills/`.  
+Pictures first: [README.md](README.md) and [docs/VISUAL.md](docs/VISUAL.md).
 
 ## 1. Copy the whole folder (keep the name)
 

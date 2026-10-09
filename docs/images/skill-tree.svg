@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="t d">
+  <title id="t">One master skill, 23 bundled leaves</title>
+  <desc id="d">All Expo, design, navigation, quality, and ship skills live inside this folder.</desc>
+  <rect width="960" height="420" fill="#F6F3EC"/>
+  <rect x="280" y="24" width="400" height="64" rx="12" fill="#121418"/>
+  <text x="480" y="50" fill="#F6F3EC" font-family="Georgia, serif" font-size="18" text-anchor="middle">mobile-app-builder</text>
+  <text x="480" y="72" fill="#C6A15B" font-family="ui-sans-serif, system-ui" font-size="12" text-anchor="middle">one SKILL.md · 23 local leaves · no npx skills add</text>
+  <g font-family="ui-sans-serif, system-ui" font-size="12">
+    <rect x="24" y="120" width="176" height="260" rx="12" fill="#FFFFFF" stroke="#1A1814"/>
+    <text x="112" y="148" text-anchor="middle" fill="#1F4E5A" font-size="13">Expo</text>
+    <text x="36" y="176" fill="#1A1814">overview</text>
+    <text x="36" y="198" fill="#1A1814">project structure</text>
+    <text x="36" y="220" fill="#1A1814">native-ui / ui</text>
+    <text x="36" y="242" fill="#1A1814">router · animation</text>
+    <text x="36" y="264" fill="#1A1814">design-system</text>
+    <text x="36" y="286" fill="#1A1814">data-fetching</text>
+    <text x="36" y="308" fill="#1A1814">dev-client · upgrade</text>
+    <rect x="216" y="120" width="176" height="260" rx="12" fill="#FFFFFF" stroke="#1A1814"/>
+    <text x="304" y="148" text-anchor="middle" fill="#1F4E5A" font-size="13">Design</text>
+    <text x="228" y="176" fill="#1A1814">mobile-design</text>
+    <text x="228" y="198" fill="#1A1814">frontend-design</text>
+    <text x="228" y="220" fill="#1A1814">theming</text>
+    <text x="228" y="242" fill="#1A1814">app-icon</text>
+    <rect x="408" y="120" width="176" height="260" rx="12" fill="#FFFFFF" stroke="#1A1814"/>
+    <text x="496" y="148" text-anchor="middle" fill="#1F4E5A" font-size="13">Quality</text>
+    <text x="420" y="176" fill="#1A1814">RN best practices</text>
+    <text x="420" y="198" fill="#1A1814">RN skills (Vercel)</text>
+    <text x="420" y="220" fill="#1A1814">RN testing</text>
+    <text x="420" y="242" fill="#1A1814">react-navigation</text>
+    <rect x="600" y="120" width="176" height="260" rx="12" fill="#FFFFFF" stroke="#1A1814"/>
+    <text x="688" y="148" text-anchor="middle" fill="#C6A15B" font-size="13">Ship</text>
+    <text x="612" y="176" fill="#1A1814">eas-app-stores</text>
+    <text x="612" y="198" fill="#1A1814">eas-update</text>
+    <text x="612" y="220" fill="#1A1814">eas-workflows</text>
+    <text x="612" y="242" fill="#1A1814">eas-simulator</text>
+    <text x="612" y="264" fill="#1A1814">local-build</text>
+    <rect x="792" y="120" width="144" height="260" rx="12" fill="#121418"/>
+    <text x="864" y="148" text-anchor="middle" fill="#C6A15B" font-size="13">Rules</text>
+    <text x="808" y="176" fill="#F6F3EC">one database</text>
+    <text x="808" y="198" fill="#F6F3EC">server authz</text>
+    <text x="808" y="220" fill="#F6F3EC">MASVS</text>
+    <text x="808" y="242" fill="#F6F3EC">PROGRESS.md</text>
+    <text x="808" y="264" fill="#F6F3EC">no AI slop</text>
+  </g>
+</svg>
