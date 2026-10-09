@@ -6,7 +6,7 @@
 - **Production** — Expo client of your **existing** web system. Same accounts, same API, same database.
 - **Both** — unique studio design, then wired to the real backend.
 
-Do not run `npx skills add`. The 23 leaf skills are already inside `skills/`.
+Do not run `npx skills add`. The leaf skills are already inside `skills/` (Expo, design studio, MASVS, Maestro, a11y, and more).
 
 ![One system, one data](docs/images/hero-one-system.jpg)
 

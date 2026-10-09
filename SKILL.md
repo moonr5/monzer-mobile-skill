@@ -90,8 +90,15 @@ Read a leaf only when the current task needs it. This master wins on product, ph
 | Lists, images, press, compiler | `react-native-skills/SKILL.md` then the matching `rules/` file |
 | Jank / TTI / bundle / memory | `react-native-best-practices/SKILL.md` |
 | Custom native build | `expo-dev-client/SKILL.md` |
-| SDK upgrade | `expo-upgrade/SKILL.md` |
+| SDK upgrade | `expo-upgrade/SKILL.md` then `upgrading-react-native/SKILL.md` if bare RN |
 | Component tests | `react-native-testing/SKILL.md` (v13 vs v14) |
+| Maestro e2e | `maestro-mobile-testing/SKILL.md` |
+| Accessibility (VoiceOver/TalkBack) | `react-native-accessibility/SKILL.md` |
+| MASVS checklist / M6 | `masvs-checklist/SKILL.md` then `secure-storage-audit`, `auth-assessment`, `network-security-check` |
+| Secrets in repo or bundle | `secrets-scan/SKILL.md` |
+| AI chat / prompt injection | `prompt-injection-test/SKILL.md` |
+| Web React → native Expo | `expo-web-to-native/SKILL.md` |
+| Bare RN upgrade (not just Expo SDK) | `upgrading-react-native/SKILL.md` |
 | Store submit / OTA / EAS CI | `eas-app-stores`, `eas-update`, `eas-workflows` |
 | Local APK / sim .app | `local-build/SKILL.md` |
 | Icons | `app-icon/SKILL.md` |
@@ -129,7 +136,7 @@ Load `design-studio` (strategy, feeling, DNA, architecture) then mobile-design l
 **Done when:** M1.1–M1.4 `DONE` and a DNA Card exists.
 
 ### M2 Design system
-Load `design-studio` §§5–6, then frontend-design → expo-design-system → expo-native-ui → theming. Feeling + DNA first. Write the two-pass plan into `DESIGN_SYSTEM.md`. Implement tokens + components (buttons, inputs, search, list rows, cards, status chips with icon+text, stat tiles, simple charts, sheets, dialogs, toasts, segmented controls, skeletons, empty/error/offline, scan overlay, chat, timeline/tree, swipe cards). Gallery in light and dark. Motion via expo-animation. Score with the $26M rubric before calling M2 done (85+/100, no category under 7).
+Load `design-studio` §§5–6, then frontend-design → expo-design-system → expo-native-ui → theming. Feeling + DNA first. Write the two-pass plan into `DESIGN_SYSTEM.md`. Implement tokens + components (buttons, inputs, search, list rows, cards, status chips with icon+text, stat tiles, simple charts, sheets, dialogs, toasts, segmented controls, skeletons, empty/error/offline, scan overlay, chat, timeline/tree, swipe cards). Gallery in light and dark. Motion via expo-animation. Score with the $26M rubric before calling M2 done (85+/100, no category under 7). Load `react-native-accessibility` for labels, roles, and touch targets.
 **Done when:** M2.1–M2.4 `DONE`.
 
 ### M3 Architecture
@@ -137,7 +144,7 @@ Load expo-data-fetching + the navigation leaf + react-native-skills. Feature mod
 **Done when:** M3.1–M3.6 `DONE`.
 
 ### M4 Features
-Build every `MOBILE_FULL` / `MOBILE_LITE` row, real backend, no mocks, in this order: (1) auth/roles/lock/profile (2) AI chat only if the system has it (3) counter flows (4) inventory (5) display slots (6) orders/credit/approvals (7) notifications (8) timeline (9) HQ dashboards (10) loyalty only if system+scope (11) settings. Each screen: all states, validation, analytics, a11y, copy, tests.
+Load `react-native-accessibility` while building UI. If the system has AI chat, load `prompt-injection-test` before shipping the assistant. If the existing product is a React web app being ported, load `expo-web-to-native` first. Build every `MOBILE_FULL` / `MOBILE_LITE` row, real backend, no mocks, in this order: (1) auth/roles/lock/profile (2) AI chat only if the system has it (3) counter flows (4) inventory (5) display slots (6) orders/credit/approvals (7) notifications (8) timeline (9) HQ dashboards (10) loyalty only if system+scope (11) settings. Each screen: all states, validation, analytics, a11y, copy, tests.
 **Done when:** every in-scope M4 row `DONE` or `NOT_NEEDED` with a matrix citation.
 
 ### M5 Backend gaps
@@ -145,11 +152,11 @@ Implement `API_GAP_LIST.md` on the existing backend: pagination/filters, push to
 **Done when:** every gap `DONE` or `BLOCKED`.
 
 ### M6 Security
-MASVS review + fixes. Write `SECURITY_REPORT.md`.
+Load `masvs-checklist`, then `secure-storage-audit`, `auth-assessment`, `network-security-check`, and `secrets-scan`. Walk MASVS groups STORAGE / CRYPTO / AUTH / NETWORK / PLATFORM / CODE / RESILIENCE / PRIVACY. Write `SECURITY_REPORT.md`.
 **Done when:** M6.1 `DONE`.
 
 ### M7 Tests
-Load react-native-testing. Jest + RNTL + Maestro. Unit, component, integration (test DB), authz per role, offline replay, e2e demo on iOS and Android, web↔mobile parity, edge cases (0812 / +62812 / 62812, duplicate IDs, last-unit race, limit exact/over, weak net, kill mid-sync, expired token, logged-out deep link, time zones). Synthetic data only.
+Load `react-native-testing` and `maestro-mobile-testing`. Jest + RNTL + Maestro. Unit, component, integration (test DB), authz per role, offline replay, e2e demo on iOS and Android, web↔mobile parity, edge cases (0812 / +62812 / 62812, duplicate IDs, last-unit race, limit exact/over, weak net, kill mid-sync, expired token, logged-out deep link, time zones). Synthetic data only.
 **Done when:** M7.1–M7.4 `DONE`. Unrun tests = `UNVERIFIED`, not `DONE`.
 
 ### M8 Performance

@@ -11,7 +11,14 @@ This master skill bundles copies of third-party agent skills so the workflow can
 | `skills/react-native-testing` | Vendored inside Callstack agent-skills (RNTL guide) | See that folder |
 | `skills/react-native-skills` | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) `skills/react-native-skills` | MIT |
 | `skills/theming`, `skills/local-build`, `skills/app-icon` | [code-with-beto/skills](https://github.com/code-with-beto/skills) | See upstream repo |
+| `skills/design-studio` | Original to Monzer | — |
+| `skills/expo-web-to-native` | [expo/skills](https://github.com/expo/skills) | MIT |
+| `skills/upgrading-react-native` | [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) | MIT |
+| `skills/maestro-mobile-testing` | [tovimx/maestro-mobile-testing-skill](https://github.com/tovimx/maestro-mobile-testing-skill) | MIT |
+| `skills/react-native-accessibility` | [rushatgabhane/react-native-accessibility-skill](https://github.com/rushatgabhane/react-native-accessibility-skill) | MIT |
+| `skills/masvs-checklist`, `secure-storage-audit`, `auth-assessment`, `network-security-check` | [dweinstein/mobile-security-skills](https://github.com/dweinstein/mobile-security-skills) (MASVS v2) | See upstream |
+| `skills/secrets-scan`, `skills/prompt-injection-test` | [OWASP/secure-agent-playbook](https://github.com/OWASP/secure-agent-playbook) | CC-BY-4.0 |
 
-Not bundled (out of scope for a client-of-existing-web-system app): Expo DOM / web-to-native / brownfield / App Clip / module authoring; Callstack TV / brownfield / library authoring; Vercel deploy / hosting / web-only React skills; Code-with-Beto `ship` (Platano scaffolder).
+Not bundled: TV, brownfield, App Clip, Expo DOM, Vercel hosting, Platano `ship`. OWASP full MASTG data pack is not copied (too large); use public MASVS/MASTG URLs from the checklist skill.
 
 The M0–M10 product workflow, Golden Rule, and discovery deliverables are original to this master skill.
