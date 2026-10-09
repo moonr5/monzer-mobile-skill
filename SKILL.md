@@ -1,0 +1,165 @@
+---
+name: mobile-app-builder
+description: Build a premium, production-ready iOS and Android mobile app (React Native + Expo) as a client of an EXISTING web app, backend and database, so mobile and web share the same accounts and data. Self-contained master skill with bundled Expo, mobile-design, frontend-design, Callstack, Vercel RN and Code-with-Beto sub-skills. Use whenever the user wants to build, plan, design, secure, test or release a mobile app for an existing CRM, dealer platform, or any web system, or says follow mobile-app-builder. Runs a non-stop phased workflow M0 to M10.
+---
+
+# Mobile App Builder — Master Skill (React Native + Expo)
+
+Any AI agent can run this. There is no extra installer. **Do not run `npx skills add`.**
+
+## 0. AGENT CONTRACT — do this before anything else
+
+### 0.1 Resolve two absolute paths
+- **SKILL_ROOT** = the folder that contains *this* `SKILL.md` (sibling folders: `skills/`, `references/`).
+- **WORKSPACE** = the product repo (existing web app, backend, database, optional mobile app). Usually the current working directory. Not SKILL_ROOT unless they are the same repo.
+
+Print both paths in one short line, then continue. If SKILL_ROOT is unknown, search the workspace and user skill directories for `mobile-app-builder/SKILL.md` or `monzer-mobile-skill/SKILL.md`.
+
+### 0.2 Path rules
+- Leaf skill `foo` means: read `SKILL_ROOT/skills/foo/SKILL.md`. Then read only the files *that* file names, resolving them under that leaf folder.
+- When a leaf says "load expo-native-ui" (or any other leaf name), translate to `SKILL_ROOT/skills/<name>/SKILL.md`. Never look on GitHub. Never run `npx skills`.
+- Templates: `SKILL_ROOT/references/progress-template.md` and `SKILL_ROOT/references/deliverable-templates.md`.
+- All workflow docs are written to `WORKSPACE/docs/`. App code is written in WORKSPACE, never inside SKILL_ROOT.
+
+### 0.3 First-run bootstrap (or resume)
+1. If `WORKSPACE/docs/PROGRESS.md` exists → read it. Resume at the first row whose status is not `DONE`. Do not restart finished work.
+2. If it does not exist → copy the table from `SKILL_ROOT/references/progress-template.md` to `WORKSPACE/docs/PROGRESS.md`. Create empty `ASSUMPTIONS.md`, `OPEN_QUESTIONS.md`, `BLOCKERS.md` using the tables in `deliverable-templates.md`.
+3. Mark B0–B2 `DONE` with the two absolute paths as evidence.
+4. Start (or continue) the first non-DONE phase. Do not ask "should I continue?"
+
+### 0.4 Non-stop protocol
+1. Execute M0 → M10 in order in one run. Never skip a row.
+2. Impossible step → log in `BLOCKERS.md`, apply the safest workaround, mark `BLOCKED`, continue.
+3. No TODOs, placeholders, lorem, mock-only screens, or half-built features in scope.
+4. Ambiguity → safest assumption in `ASSUMPTIONS.md`, keep going. Ask the user only if a decision is irreversible AND could reasonably go either way; finish everything else first.
+5. Never claim pass/verified unless you ran it. Otherwise `UNVERIFIED`.
+6. Inspect before edit. No unnecessary rewrites. Preserve working behavior.
+7. Job is done only when every FINAL DELIVERABLE exists and every PROGRESS row is `DONE` or `BLOCKED` with a reason.
+8. After every task: update that PROGRESS row before starting the next.
+
+### 0.5 Tools you may use
+Use whatever tools your host gives you (read, write, shell, grep, browser). This skill does not require Cursor-only tools. Shell examples assume the WORKSPACE as cwd. Package installs: `npx expo install <pkg>` after you know the Expo SDK from `package.json`.
+
+---
+
+## ROLE
+Principal mobile architect + senior React Native/Expo engineer + lead product designer. The web app, backend and database already exist. Mobile is a first-class client of that system, not a separate product.
+
+## QUALITY BAR
+Treat design and engineering as a $120M-quality product: distinctive identity, zero rough edges, enterprise reliability. "Good enough" is a failure. (Quality standard, not a spending instruction.)
+
+## SOURCE OF TRUTH
+Discover the real system from code, schema, APIs, auth, roles, jobs, notifications, docs, seed data, existing mobile. The system wins over this skill; record differences in `ASSUMPTIONS.md`. Never invent names; use configurable labels and log them in `OPEN_QUESTIONS.md`.
+
+Business intent to score in `BUSINESS_INTENT_CHECK.md` (build only what exists or is clearly missing and needed):
+- HQ sees one customer across stores, with a cross-store purchase timeline.
+- HQ sees store inventory (own + other brands), display slots (full/low/empty), what replaced an emptied slot, own vs competitor share.
+- Dealers/staff get a simple chat-first tool and see only their own data.
+- UI language: simple Indonesian at SMP/SMA level if that is the market; otherwise language and formats from the system.
+
+## GOLDEN RULE — one system, one data set
+Same accounts, same backend, same database as web. Same permissions. Changes appear on the other client within seconds. No second database. No DB credentials, service keys, or AI provider keys in the app. Missing mobile endpoints go on the existing backend (versioned, documented, tested) reusing web business logic. Server enforces authz; hiding UI is not the control.
+
+## LEAF ROUTER
+Read a leaf only when the current task needs it. This master wins on product, phases, and deliverables. A leaf wins on API/version details *after* you inspect the project.
+
+| Task | Read first (`SKILL_ROOT/skills/…`) |
+| --- | --- |
+| Any Expo/EAS question | `expo-overview/SKILL.md` then the leaf it names |
+| New Expo folders only (no existing layout) | `expo-project-structure/SKILL.md` |
+| M1 journeys / screens / UX | `mobile-design/SKILL.md` + `references/design-process.md`, `screen-patterns.md`, `navigation.md` |
+| M2 identity | `frontend-design/SKILL.md` then `mobile-design/SKILL.md` |
+| M2 tokens / components | `expo-design-system/SKILL.md` then `expo-native-ui`, `expo-ui`, `theming` |
+| Motion / gestures | `expo-animation/SKILL.md` |
+| Navigation | Existing stack first. Expo Router → `expo-router/SKILL.md`. React Navigation → `react-navigation/SKILL.md` |
+| API / cache / offline / four screen states | `expo-data-fetching/SKILL.md` |
+| Lists, images, press, compiler | `react-native-skills/SKILL.md` then the matching `rules/` file |
+| Jank / TTI / bundle / memory | `react-native-best-practices/SKILL.md` |
+| Custom native build | `expo-dev-client/SKILL.md` |
+| SDK upgrade | `expo-upgrade/SKILL.md` |
+| Component tests | `react-native-testing/SKILL.md` (v13 vs v14) |
+| Store submit / OTA / EAS CI | `eas-app-stores`, `eas-update`, `eas-workflows` |
+| Local APK / sim .app | `local-build/SKILL.md` |
+| Icons | `app-icon/SKILL.md` |
+| Cloud simulator | `eas-simulator/SKILL.md` |
+
+Mobile-design extra files live in `SKILL_ROOT/skills/mobile-design/references/`: `visual-system.md`, `typography-color.md`, `accessibility-touch.md`, `motion-haptics.md`, `forms.md`, `feasibility-risk.md`, `adaptivity-localization.md`, `platform-ios.md`, `platform-android.md`, `react-native-implementation.md`, `review-checklists.md`, `review-rules.md`.
+
+**Stack conflicts:** inspect first. Never add a second navigation, state, styling, or data-fetching system. Greenfield Expo default: Expo Router + TanStack Query + Zustand + Zod + one styling approach, written in `ARCHITECTURE.md`. Prefer `@expo/ui` before a community kit; its List is a grouped settings list, not a virtualized feed (use FlashList/FlatList). Not bundled: TV, brownfield, App Clip, Expo DOM, Vercel hosting, Platano `ship`. Licenses: `ATTRIBUTION.md`.
+
+## HARD RULES (always on)
+**Expo.** Detect SDK from `package.json`. `npx expo install`. Do not bump SDK by hand. Do not restructure an existing app to match `expo-project-structure`.
+
+**Design read (before M2/M4 UI):** `Reading this as: <category> for <audience>, with a <direction> interface, targeting iOS+Android.` Defaults for this operational product: `DESIGN_VARIANCE=6`, `MOTION_INTENSITY=4`, `VISUAL_DENSITY=6` (lower for banking/health/safety). Touch ≥44pt iOS / ≥48dp Android. WCAG AA (4.5:1 body, 3:1 large/UI). Safe areas, keyboard, edge-to-edge. Dynamic Type + Reduce Motion. Gestures need a visible alternative. Status never color-only. Required states: loading, empty, error, offline, disabled, pressed, success. One theme; screens import components; components import tokens.
+
+**Refuse generic AI mobile.** No website heroes, glow blobs, purple-blue gradients, nested cards, random pills, fake glass, generic avatars, lorem, success-only UI. One brand accent. System fonts unless brand requires custom.
+
+**M2 identity.** Two passes: (1) 4–6 named hex values, type roles, layout concept, principles from *this* subject; (2) delete anything you would also produce for a different product.
+
+**Engineering defaults** (unless the repo already chose otherwise): FlashList for long lists; `expo-image`; `Pressable`; Reanimated on `transform`/`opacity` only; native stack/tabs; TanStack Query + Zustand + Zod; `expo-secure-store` for tokens (never AsyncStorage); text only inside `Text`; no falsy `&&` that can be `0`; no fat barrel imports; measure before memoizing.
+
+**Copy.** Active voice, sentence case, user words. Errors = what happened + what to do. Empty = invite an action. Same verb from button through toast.
+
+**Libraries.** Choose ONE styling/component approach. Record every add in `EXISTING_STACK_REPORT.md`. Vercel AI SDK is backend-only; never embed provider keys.
+
+## PHASES
+File shapes: `SKILL_ROOT/references/deliverable-templates.md`.  
+Do not start phase N+1 until that template's required tables/headings exist for phase N (or the missing piece is `BLOCKED`).
+
+### M0 Discovery — no app feature code yet
+Read the whole web app, backend, schema, APIs, auth, roles, jobs, notifications, docs, seeds, existing mobile. Then write the six M0 docs. Scope hint (override with evidence): primary users = store counter; secondary = field/regional; HQ = light monitoring; heavy admin = `WEB_ONLY`.
+**Done when:** M0.1–M0.6 are `DONE` and consistent with each other.
+
+### M1 Product / IA
+Load mobile-design leaves listed in the router. Write journeys, nav map, screen inventory (every state), content guide. Include the demo scenario adapted to the real system.
+**Done when:** M1.1–M1.4 `DONE`.
+
+### M2 Design system
+Load frontend-design → expo-design-system → expo-native-ui → theming. Write the two-pass plan into `DESIGN_SYSTEM.md`. Implement tokens + components (buttons, inputs, search, list rows, cards, status chips with icon+text, stat tiles, simple charts, sheets, dialogs, toasts, segmented controls, skeletons, empty/error/offline, scan overlay, chat, timeline/tree, swipe cards). Gallery in light and dark. Motion via expo-animation.
+**Done when:** M2.1–M2.4 `DONE`.
+
+### M3 Architecture
+Load expo-data-fetching + the navigation leaf + react-native-skills. Feature modules, typed API client, auth, offline queue, sync, EAS envs, CI. Write `ARCHITECTURE.md`.
+**Done when:** M3.1–M3.6 `DONE`.
+
+### M4 Features
+Build every `MOBILE_FULL` / `MOBILE_LITE` row, real backend, no mocks, in this order: (1) auth/roles/lock/profile (2) AI chat only if the system has it (3) counter flows (4) inventory (5) display slots (6) orders/credit/approvals (7) notifications (8) timeline (9) HQ dashboards (10) loyalty only if system+scope (11) settings. Each screen: all states, validation, analytics, a11y, copy, tests.
+**Done when:** every in-scope M4 row `DONE` or `NOT_NEEDED` with a matrix citation.
+
+### M5 Backend gaps
+Implement `API_GAP_LIST.md` on the existing backend: pagination/filters, push tokens, notification hooks, idempotency, rate limits, AI quotas, audit (device + app version), consent on customer capture. Migrations with rollback. Reuse web logic.
+**Done when:** every gap `DONE` or `BLOCKED`.
+
+### M6 Security
+MASVS review + fixes. Write `SECURITY_REPORT.md`.
+**Done when:** M6.1 `DONE`.
+
+### M7 Tests
+Load react-native-testing. Jest + RNTL + Maestro. Unit, component, integration (test DB), authz per role, offline replay, e2e demo on iOS and Android, web↔mobile parity, edge cases (0812 / +62812 / 62812, duplicate IDs, last-unit race, limit exact/over, weak net, kill mid-sync, expired token, logged-out deep link, time zones). Synthetic data only.
+**Done when:** M7.1–M7.4 `DONE`. Unrun tests = `UNVERIFIED`, not `DONE`.
+
+### M8 Performance
+Load react-native-best-practices. Measure → fix → re-measure. Sentry + Amplitude. Mid-range Android + iPhone.
+**Done when:** M8.1–M8.3 `DONE`.
+
+### M9 Release
+Load eas-app-stores, eas-update, eas-workflows, app-icon; local-build if needed. Production profiles, listings, privacy, OTA, force-update, staged rollout, rollback, TestFlight/internal checklist.
+**Done when:** M9.1–M9.3 `DONE`.
+
+### M10 Demo + handover
+Seed 3 stores, 2 customers, 1 competitor-filled slot. Demo script must run cleanly 3 times from a fresh DB, phone and web side by side. README, architecture, API usage, env setup, release, runbook, final summary (verified / UNVERIFIED / risks).
+**Done when:** M10.1–M10.4 `DONE`.
+
+## SCREEN DONE CHECK
+Intentional and on-system; every state designed; one-handed at a bright counter and in dark mode; copy actionable; AA + font scale + screen reader + reduced motion; 60fps; no layout jump; skeletons over spinners; primary action obvious in two seconds.
+
+## FINAL DELIVERABLES
+1. Working iOS + Android app on the real backend; demo scenario passing.
+2. `docs/` M0 six files.
+3. `docs/` M1 four files + `DESIGN_SYSTEM.md`.
+4. `ARCHITECTURE.md`, `SECURITY_REPORT.md`, `TEST_REPORT.md`, `PERFORMANCE_REPORT.md`.
+5. `ASSUMPTIONS.md`, `OPEN_QUESTIONS.md`, `BLOCKERS.md`, `PROGRESS.md`.
+6. Final summary in the agent's last message and in `docs/HANDOVER.md`.
+
+## START
+Execute §0 now. Then M0. Do not wait.
