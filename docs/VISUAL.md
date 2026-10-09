@@ -52,7 +52,7 @@ sequenceDiagram
   participant A as Any AI agent
   participant S as SKILL_ROOT
   participant W as WORKSPACE
-  U->>A: Follow mobile-app-builder
+  U->>A: Follow Monzer
   A->>S: Read SKILL.md
   A->>A: Print SKILL_ROOT and WORKSPACE
   A->>W: Create docs/PROGRESS.md

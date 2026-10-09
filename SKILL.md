@@ -1,9 +1,9 @@
 ---
-name: mobile-app-builder
-description: Design or build a unique iOS/Android/cross-platform mobile app, UI, screens, mockup, or prototype in any words ("make me an app for...", "design a fitness app", "screens for my delivery startup"). Also builds a production Expo client of an EXISTING web app so mobile and web share accounts and data. Runs a $26M-class design studio (feeling-first, never the same look twice) plus the M0-M10 engineering workflow. Use for mobile design, screens, prototypes, or a production CRM/dealer/web-system app, or when the user says follow mobile-app-builder.
+name: monzer
+description: Design or build a unique iOS/Android/cross-platform mobile app, UI, screens, mockup, or prototype in any words ("make me an app for...", "design a fitness app", "screens for my delivery startup"). Also builds a production Expo client of an EXISTING web app so mobile and web share accounts and data. Runs Monzer's $26M-class design studio (feeling-first, never the same look twice) plus the M0-M10 engineering workflow. Use for mobile design, screens, prototypes, a production CRM/dealer/web-system app, or when the user says follow monzer or Monzer.
 ---
 
-# Mobile App Builder — Master Skill (React Native + Expo)
+# Monzer — Mobile Design Studio and App Builder
 
 Any AI agent can run this. There is no extra installer. **Do not run `npx skills add`.**  
 Humans: start at [README.md](README.md) (images + diagrams). Agents: stay in this file.
@@ -14,7 +14,7 @@ Humans: start at [README.md](README.md) (images + diagrams). Agents: stay in thi
 - **SKILL_ROOT** = the folder that contains *this* `SKILL.md` (sibling folders: `skills/`, `references/`).
 - **WORKSPACE** = the product repo (existing web app, backend, database, optional mobile app). Usually the current working directory. Not SKILL_ROOT unless they are the same repo.
 
-Print both paths in one short line, then continue. If SKILL_ROOT is unknown, search the workspace and user skill directories for `mobile-app-builder/SKILL.md` or `monzer-mobile-skill/SKILL.md`.
+Print both paths in one short line, then continue. If SKILL_ROOT is unknown, search the workspace and user skill directories for `monzer/SKILL.md` or `monzer-mobile-skill/SKILL.md`.
 
 ### 0.2 Path rules
 - Leaf skill `foo` means: read `SKILL_ROOT/skills/foo/SKILL.md`. Then read only the files *that* file names, resolving them under that leaf folder.

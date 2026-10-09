@@ -1,6 +1,6 @@
 # AGENTS
 
-This directory is the **mobile-app-builder** skill.
+This directory is the **Monzer** skill (`name: monzer`).
 
 1. Read `SKILL.md` in this same folder. That file is the full workflow. Follow it exactly.
 2. Set `SKILL_ROOT` to this folder's absolute path.

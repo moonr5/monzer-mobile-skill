@@ -1,4 +1,4 @@
-# Mobile App Builder
+# Monzer
 
 **One master skill. Two tracks.**
 
@@ -89,7 +89,7 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-  MASTER[SKILL.md master]
+  MASTER[Monzer · SKILL.md]
   MASTER --> EXPO[Expo · UI · data · router]
   MASTER --> DESIGN[mobile-design · frontend-design · theming]
   MASTER --> QUALITY[testing · best-practices · RN skills]

@@ -6,10 +6,10 @@ Pictures first: [README.md](README.md) and [docs/VISUAL.md](docs/VISUAL.md).
 
 ## 1. Copy the whole folder (keep the name)
 
-Copy `monzer-mobile-skill` so this layout stays intact:
+Copy this folder as **`monzer`** so agents discover it by your name:
 
 ```
-mobile-app-builder/
+monzer/
 ├── SKILL.md                 ← agents start here
 ├── AGENTS.md
 ├── INSTALL.md
@@ -20,11 +20,11 @@ mobile-app-builder/
 
 | Agent | Put the folder here |
 | --- | --- |
-| Cursor | `~/.cursor/skills/mobile-app-builder/` or `<repo>/.cursor/skills/mobile-app-builder/` |
-| Claude Code | `~/.claude/skills/mobile-app-builder/` or `<repo>/.claude/skills/mobile-app-builder/` |
+| Cursor | `~/.cursor/skills/monzer/` or `<repo>/.cursor/skills/monzer/` |
+| Claude Code | `~/.claude/skills/monzer/` or `<repo>/.claude/skills/monzer/` |
 | Codex / other AGENTS.md agents | Copy `AGENTS.md` + this folder into the repo, or point AGENTS.md at this `SKILL.md` |
-| Windsurf | `<repo>/.windsurf/skills/mobile-app-builder/` |
-| Copilot (custom instructions) | Paste the prompt below into custom instructions and keep the folder in the repo as `skills/mobile-app-builder/` |
+| Windsurf | `<repo>/.windsurf/skills/monzer/` |
+| Copilot (custom instructions) | Paste the prompt below into custom instructions and keep the folder in the repo as `skills/monzer/` |
 | Any agent with no skill loader | Open the **app** repo as the workspace, then paste the prompt below |
 
 Windows home = `C:\Users\<you>\`. macOS/Linux home = `~`.
@@ -55,6 +55,6 @@ The agent's first actions must be:
 
 1. Print `SKILL_ROOT` and `WORKSPACE` as absolute paths.
 2. Create `docs/PROGRESS.md` from `references/progress-template.md`.
-3. Start M0 — not app UI.
+3. Print `TRACK = S | P | BOTH`, then start that track.
 
 If it starts designing screens or asks "should I continue?", it did not load the skill. Repeat the prompt and point at `SKILL.md` again.
