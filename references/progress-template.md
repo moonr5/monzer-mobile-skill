@@ -9,6 +9,17 @@ Resume = first row that is not `DONE`.
 | B0 | BOOT | SKILL_ROOT resolved; this file created | TODO | |
 | B1 | BOOT | WORKSPACE resolved; docs/ created | TODO | |
 | B2 | BOOT | Ledger files created (ASSUMPTIONS, OPEN_QUESTIONS, BLOCKERS) | TODO | |
+| B3 | BOOT | TRACK = S / P / BOTH printed | TODO | |
+| S0 | STUDIO | Intake brief (max 3 questions or inferred) | TODO | |
+| S1 | STUDIO | Strategy thesis, audience, core loop | TODO | |
+| S2 | STUDIO | Feeling Statement + journey (5 moments) | TODO | |
+| S3 | STUDIO | DNA Card drawn; distance check passed; ledger updated | TODO | |
+| S4 | STUDIO | Screen map + nav (max 5 destinations) | TODO | |
+| S5 | STUDIO | Tokens + components | TODO | |
+| S6 | STUDIO | Full screen set + states + signature screen | TODO | |
+| S7 | STUDIO | Prototype or Expo code | TODO | |
+| S8 | STUDIO | Rubric ≥85, no category under 7 | TODO | |
+| S9 | STUDIO | SHOWCASE.md + STUDIO_BRIEF.md | TODO | |
 | M0.1 | M0 | SYSTEM_INVENTORY.md complete | TODO | |
 | M0.2 | M0 | MOBILE_SCOPE_MATRIX.md — every web feature × every role | TODO | |
 | M0.3 | M0 | DATA_PARITY_MATRIX.md | TODO | |

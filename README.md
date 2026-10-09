@@ -1,6 +1,10 @@
 # Mobile App Builder
 
-**One master skill.** Any AI agent reads `SKILL.md` and builds an iOS + Android app as a **client of your existing web system** — same accounts, same API, same database.
+**One master skill. Two tracks.**
+
+- **Studio** — "make me an app", screens, mockup, prototype. A $26M-class studio. Feeling first. Never the same look twice.
+- **Production** — Expo client of your **existing** web system. Same accounts, same API, same database.
+- **Both** — unique studio design, then wired to the real backend.
 
 Do not run `npx skills add`. The 23 leaf skills are already inside `skills/`.
 
@@ -17,12 +21,13 @@ Do not run `npx skills add`. The 23 leaf skills are already inside `skills/`.
 ```mermaid
 flowchart LR
   A[Read SKILL.md] --> B[Set SKILL_ROOT + WORKSPACE]
-  B --> C[Copy docs/PROGRESS.md]
-  C --> D[Run M0 to M10]
-  D --> E{Interrupted?}
-  E -->|yes| F[Resume first non-DONE row]
-  F --> D
-  E -->|no| G[HANDOVER.md]
+  B --> T{Track?}
+  T -->|Studio| S[design-studio 0-9]
+  T -->|Production| P[M0 to M10]
+  T -->|Both| S2[Studio 0-6]
+  S2 --> P
+  S --> G[SHOWCASE + BRIEF]
+  P --> H[HANDOVER.md]
 ```
 
 **Paste this to any agent** (Cursor, Claude Code, Codex, Copilot):

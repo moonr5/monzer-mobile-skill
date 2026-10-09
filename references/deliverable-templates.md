@@ -133,6 +133,22 @@ Cover at least: secure storage, no secrets in bundle, TLS, root/jailbreak handli
 
 Required metrics: cold start, list FPS, scan latency, chat TTFT (if chat exists), memory, battery sample.
 
+## docs/DNA_LEDGER.md
+
+One card per run. Never repeat more than 2 axes from an earlier card.
+
+```
+## Run <n> — <date> — <prompt one-liner>
+Feeling: feel ___, then ___, never ___.
+Name / promise:
+Axes: palette · accent · shape · type · layout · signature · nav · elevation · density · motion · imagery · voice
+Distance vs prior: __ / 12
+```
+
+## docs/STUDIO_BRIEF.md
+
+Product name, promise, logo direction. Feeling Statement + 5-moment journey. DNA Card (12 axes). Studio Notes (one decision per key role). Design system pointer. Screen list with signature screen marked. QA score. One next step.
+
 ## docs/HANDOVER.md
 
 Required headings: What was built, Verified with evidence, UNVERIFIED, Blockers still open, Risks, Next steps, How to run web + mobile side by side.

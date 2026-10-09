@@ -2,6 +2,20 @@
 
 Read the pictures first. Open a leaf only when a phase needs it.
 
+## Which track
+
+```mermaid
+flowchart TB
+  Q{What did the user ask?}
+  Q -->|make me an app / screens / mockup / feel| S[Track S · design-studio]
+  Q -->|existing CRM / web / shared DB| P[Track P · M0-M10]
+  Q -->|existing system + new look| B[Track BOTH]
+  S --> DNA[Feeling + DNA Card]
+  B --> DNA
+  P --> DNA
+  DNA --> OUT[Unique UI + system]
+```
+
 ## Who talks to what
 
 ```mermaid
