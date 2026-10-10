@@ -93,7 +93,7 @@ flowchart TB
   MASTER --> EXPO[Expo · UI · data · router]
   MASTER --> DESIGN[design-studio · mobile-design · theming]
   MASTER --> QUALITY[QM audit · QA tests · QC review · QI 8D PDCA]
-  MASTER --> SHIP[EAS · local-build · app-icon]
+  MASTER --> SHIP[EAS · push · Sentry · maps · i18n]
   MASTER --> RULES[one DB · MASVS · secrets · PROGRESS.md]
 ```
 

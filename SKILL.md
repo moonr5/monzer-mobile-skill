@@ -103,6 +103,12 @@ Read a leaf only when the current task needs it. This master wins on product, ph
 | Local APK / sim .app | `local-build/SKILL.md` |
 | Icons | `app-icon/SKILL.md` |
 | Cloud simulator | `eas-simulator/SKILL.md` |
+| Push / tap-to-open | `push-notifications/SKILL.md` |
+| Camera / barcode scan | `camera-scan/SKILL.md` |
+| Map / device location | `maps-location/SKILL.md` |
+| Language, formats, RTL | `i18n-rtl/SKILL.md` then `mobile-design/references/adaptivity-localization.md` |
+| Crashes (Sentry) | `sentry-react-native/SKILL.md` |
+| Product analytics (Amplitude) | `amplitude-expo/SKILL.md` |
 | QM / QA / QC / QI, before the track is called done | `quality/SKILL.md` — it loads `qa-testing`, `critique-review`, and `skills/qe/…` |
 
 Mobile-design extra files live in `SKILL_ROOT/skills/mobile-design/references/`: `visual-system.md`, `typography-color.md`, `accessibility-touch.md`, `motion-haptics.md`, `forms.md`, `feasibility-risk.md`, `adaptivity-localization.md`, `platform-ios.md`, `platform-android.md`, `react-native-implementation.md`, `review-checklists.md`, `review-rules.md`.
@@ -139,7 +145,7 @@ Load `design-studio` (strategy, feeling, DNA, architecture) then mobile-design l
 **Done when:** M1.1–M1.4 `DONE` and a DNA Card exists.
 
 ### M2 Design system
-Load `design-studio` §§5–6, then frontend-design → expo-design-system → expo-native-ui → theming. Feeling + DNA first. Write the two-pass plan into `DESIGN_SYSTEM.md`. Implement tokens + components (buttons, inputs, search, list rows, cards, status chips with icon+text, stat tiles, simple charts, sheets, dialogs, toasts, segmented controls, skeletons, empty/error/offline, scan overlay, chat, timeline/tree, swipe cards). Gallery in light and dark. Motion via expo-animation. Score with the $26M rubric before calling M2 done (85+/100, no category under 7). Load `quality` and record the QC score in `QUALITY.md`. Load `react-native-accessibility` for labels, roles, and touch targets.
+Load `design-studio` §§5–6, then frontend-design → expo-design-system → expo-native-ui → theming. Feeling + DNA first. Write the two-pass plan into `DESIGN_SYSTEM.md`. Implement tokens + components (buttons, inputs, search, list rows, cards, status chips with icon+text, stat tiles, simple charts, sheets, dialogs, toasts, segmented controls, skeletons, empty/error/offline, scan overlay, chat, timeline/tree, swipe cards). Load `camera-scan` when a screen scans, `maps-location` when a screen shows places, and `i18n-rtl` before writing new copy. Gallery in light and dark. Motion via expo-animation. Score with the $26M rubric before calling M2 done (85+/100, no category under 7). Load `quality` and record the QC score in `QUALITY.md`. Load `react-native-accessibility` for labels, roles, and touch targets.
 **Done when:** M2.1–M2.4 `DONE`.
 
 ### M3 Architecture
@@ -147,11 +153,11 @@ Load expo-data-fetching + the navigation leaf + react-native-skills. Feature mod
 **Done when:** M3.1–M3.6 `DONE`.
 
 ### M4 Features
-Load `react-native-accessibility` while building UI. If the system has AI chat, load `prompt-injection-test` before shipping the assistant. If the existing product is a React web app being ported, load `expo-web-to-native` first. Build every `MOBILE_FULL` / `MOBILE_LITE` row, real backend, no mocks, in this order: (1) auth/roles/lock/profile (2) AI chat only if the system has it (3) counter flows (4) inventory (5) display slots (6) orders/credit/approvals (7) notifications (8) timeline (9) HQ dashboards (10) loyalty only if system+scope (11) settings. Each screen: all states, validation, analytics, a11y, copy, tests.
+Load `react-native-accessibility` while building UI. If the system has AI chat, load `prompt-injection-test` before shipping the assistant. If the existing product is a React web app being ported, load `expo-web-to-native` first. Build every `MOBILE_FULL` / `MOBILE_LITE` row, real backend, no mocks, in this order: (1) auth/roles/lock/profile (2) AI chat only if the system has it (3) counter flows (4) inventory (5) display slots (6) orders/credit/approvals (7) notifications — load `push-notifications` (8) timeline (9) HQ dashboards (10) loyalty only if system+scope (11) settings, including language via `i18n-rtl`. Load `camera-scan` or `maps-location` on the screen that needs them. Each screen: all states, validation, analytics, a11y, copy, tests.
 **Done when:** every in-scope M4 row `DONE` or `NOT_NEEDED` with a matrix citation.
 
 ### M5 Backend gaps
-Implement `API_GAP_LIST.md` on the existing backend: pagination/filters, push tokens, notification hooks, idempotency, rate limits, AI quotas, audit (device + app version), consent on customer capture. Migrations with rollback. Reuse web logic.
+Implement `API_GAP_LIST.md` on the existing backend: pagination/filters, push tokens, notification hooks, idempotency, rate limits, AI quotas, audit (device + app version), consent on customer capture. Load `push-notifications` for the token and delivery contract. Migrations with rollback. Reuse web logic.
 **Done when:** every gap `DONE` or `BLOCKED`.
 
 ### M6 Security
@@ -163,7 +169,7 @@ Load `react-native-testing` and `maestro-mobile-testing`. Jest + RNTL + Maestro.
 **Done when:** M7.1–M7.4 `DONE`. Unrun tests = `UNVERIFIED`, not `DONE`. QC rows in `QUALITY.md` cite those runs.
 
 ### M8 Performance
-Load react-native-best-practices. Measure → fix → re-measure. Sentry + Amplitude. Mid-range Android + iPhone.
+Load react-native-best-practices. Measure → fix → re-measure. Load `sentry-react-native` and `amplitude-expo`. Keys stay in EAS env. Mid-range Android + iPhone.
 **Done when:** M8.1–M8.3 `DONE`.
 
 ### M9 Release

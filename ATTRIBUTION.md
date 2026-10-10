@@ -16,6 +16,9 @@ This master skill bundles copies of third-party agent skills so the workflow can
 | `skills/qe/` | [RBraga01/Quality-Engineering-Skills](https://github.com/RBraga01/Quality-Engineering-Skills) (ISO audit, DFMEA, PFMEA, DVP, NCR, CAR, 5-Why, fishbone, 8D, PDCA, DMAIC) | MIT (`skills/qe/LICENSE`) |
 | `skills/qa-testing` | [laurenceputra/agent-skills](https://github.com/laurenceputra/agent-skills) `skills/qa-testing` | MIT |
 | `skills/critique-review` | [repath500/critique-review](https://github.com/repath500/critique-review) | MIT |
+| `skills/sentry-react-native` | [getsentry/sentry-agent-skills](https://github.com/getsentry/sentry-agent-skills) `skills/sentry-react-native-sdk` | Apache-2.0 (declared in the skill) |
+| `skills/amplitude-expo` | [amplitude/wizard](https://github.com/amplitude/wizard) `skills/integration/integration-expo` | MIT |
+| `skills/push-notifications`, `camera-scan`, `maps-location`, `i18n-rtl` | Original to Monzer | — |
 | `skills/expo-web-to-native` | [expo/skills](https://github.com/expo/skills) | MIT |
 | `skills/upgrading-react-native` | [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) | MIT |
 | `skills/maestro-mobile-testing` | [tovimx/maestro-mobile-testing-skill](https://github.com/tovimx/maestro-mobile-testing-skill) | MIT |
