@@ -92,7 +92,7 @@ flowchart TB
   MASTER[Monzer · SKILL.md]
   MASTER --> EXPO[Expo · UI · data · router]
   MASTER --> DESIGN[design-studio · mobile-design · theming]
-  MASTER --> QUALITY[QM · QA · QC · QI · Maestro · a11y]
+  MASTER --> QUALITY[QM audit · QA tests · QC review · QI 8D PDCA]
   MASTER --> SHIP[EAS · local-build · app-icon]
   MASTER --> RULES[one DB · MASVS · secrets · PROGRESS.md]
 ```
@@ -126,7 +126,7 @@ CONTRIBUTORS.md          ← author + Cursor + the other agents
 docs/images/             ← posters + SVG diagrams
 docs/VISUAL.md           ← interactive mermaid map
 references/              ← PROGRESS + deliverable templates
-skills/                  ← 35 bundled leaves
+skills/                  ← leaves, including the quality pack under skills/qe/
 ```
 
 ---

@@ -103,7 +103,7 @@ Read a leaf only when the current task needs it. This master wins on product, ph
 | Local APK / sim .app | `local-build/SKILL.md` |
 | Icons | `app-icon/SKILL.md` |
 | Cloud simulator | `eas-simulator/SKILL.md` |
-| QM / QA / QC / QI, before the track is called done | `quality/SKILL.md` |
+| QM / QA / QC / QI, before the track is called done | `quality/SKILL.md` — it loads `qa-testing`, `critique-review`, and `skills/qe/…` |
 
 Mobile-design extra files live in `SKILL_ROOT/skills/mobile-design/references/`: `visual-system.md`, `typography-color.md`, `accessibility-touch.md`, `motion-haptics.md`, `forms.md`, `feasibility-risk.md`, `adaptivity-localization.md`, `platform-ios.md`, `platform-android.md`, `react-native-implementation.md`, `review-checklists.md`, `review-rules.md`.
 

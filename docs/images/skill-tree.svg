@@ -31,6 +31,7 @@
     <text x="420" y="264" fill="#1A1814">accessibility</text>
     <text x="420" y="286" fill="#1A1814">react-navigation</text>
     <text x="420" y="308" fill="#1A1814">QM QA QC QI</text>
+    <text x="420" y="330" fill="#1A1814">5-Why · 8D · PDCA</text>
     <rect x="600" y="120" width="176" height="260" rx="12" fill="#FFFFFF" stroke="#1A1814"/>
     <text x="688" y="148" text-anchor="middle" fill="#C6A15B" font-size="13">Ship</text>
     <text x="612" y="176" fill="#1A1814">eas-app-stores</text>
