@@ -83,6 +83,8 @@ flowchart TB
   M2 -.-> DS[skills/expo-design-system]
   M3 -.-> DF[skills/expo-data-fetching]
   M7 -.-> T[skills/react-native-testing]
+  M7 -.-> Q[skills/quality]
+  M10 -.-> Q
   M8 -.-> P[skills/react-native-best-practices]
   M9 -.-> EAS[skills/eas-app-stores]
 ```

@@ -10,6 +10,10 @@ Resume = first row that is not `DONE`.
 | B1 | BOOT | WORKSPACE resolved; docs/ created | TODO | |
 | B2 | BOOT | Ledger files created (ASSUMPTIONS, OPEN_QUESTIONS, BLOCKERS) | TODO | |
 | B3 | BOOT | TRACK = S / P / BOTH printed | TODO | |
+| Q0 | QUALITY | QM plan written in QUALITY.md (gates + RELEASE rule) | TODO | |
+| Q1 | QUALITY | QA process audit recorded for each finished phase | TODO | |
+| Q2 | QUALITY | QC inspection logged with evidence (Critical / Major / Minor) | TODO | |
+| Q3 | QUALITY | QI actions closed for every Critical and Major | TODO | |
 | S0 | STUDIO | Intake brief (max 3 questions or inferred) | TODO | |
 | S1 | STUDIO | Strategy thesis, audience, core loop | TODO | |
 | S2 | STUDIO | Feeling Statement + journey (5 moments) | TODO | |

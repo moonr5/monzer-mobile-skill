@@ -12,6 +12,7 @@ This master skill bundles copies of third-party agent skills so the workflow can
 | `skills/react-native-skills` | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) `skills/react-native-skills` | MIT |
 | `skills/theming`, `skills/local-build`, `skills/app-icon` | [code-with-beto/skills](https://github.com/code-with-beto/skills) | See upstream repo |
 | `skills/design-studio` | Original to Monzer | — |
+| `skills/quality` | Original to Monzer (QM, QA, QC, QI) | — |
 | `skills/expo-web-to-native` | [expo/skills](https://github.com/expo/skills) | MIT |
 | `skills/upgrading-react-native` | [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills) | MIT |
 | `skills/maestro-mobile-testing` | [tovimx/maestro-mobile-testing-skill](https://github.com/tovimx/maestro-mobile-testing-skill) | MIT |

@@ -103,6 +103,7 @@ Read a leaf only when the current task needs it. This master wins on product, ph
 | Local APK / sim .app | `local-build/SKILL.md` |
 | Icons | `app-icon/SKILL.md` |
 | Cloud simulator | `eas-simulator/SKILL.md` |
+| QM / QA / QC / QI, before the track is called done | `quality/SKILL.md` |
 
 Mobile-design extra files live in `SKILL_ROOT/skills/mobile-design/references/`: `visual-system.md`, `typography-color.md`, `accessibility-touch.md`, `motion-haptics.md`, `forms.md`, `feasibility-risk.md`, `adaptivity-localization.md`, `platform-ios.md`, `platform-android.md`, `react-native-implementation.md`, `review-checklists.md`, `review-rules.md`.
 
@@ -119,6 +120,8 @@ Mobile-design extra files live in `SKILL_ROOT/skills/mobile-design/references/`:
 
 **Engineering defaults** (unless the repo already chose otherwise): FlashList for long lists; `expo-image`; `Pressable`; Reanimated on `transform`/`opacity` only; native stack/tabs; TanStack Query + Zustand + Zod; `expo-secure-store` for tokens (never AsyncStorage); text only inside `Text`; no falsy `&&` that can be `0`; no fat barrel imports; measure before memoizing.
 
+**Quality.** Load `skills/quality/SKILL.md`. QM writes the gates first. QA checks the process at the end of each phase. QC inspects the product from evidence, not from a claim. QI adds a preventive check for every Critical and Major. Do not set `RELEASE = GO` while a Critical defect is open. Record it in `docs/QUALITY.md`.
+
 **Copy.** Active voice, sentence case, user words. Errors = what happened + what to do. Empty = invite an action. Same verb from button through toast.
 
 **Libraries.** Choose ONE styling/component approach. Record every add in `EXISTING_STACK_REPORT.md`. Vercel AI SDK is backend-only; never embed provider keys.
@@ -129,14 +132,14 @@ Do not start phase N+1 until that template's required tables/headings exist for 
 
 ### M0 Discovery — no app feature code yet
 Read the whole web app, backend, schema, APIs, auth, roles, jobs, notifications, docs, seeds, existing mobile. Then write the six M0 docs. Scope hint (override with evidence): primary users = store counter; secondary = field/regional; HQ = light monitoring; heavy admin = `WEB_ONLY`.
-**Done when:** M0.1–M0.6 are `DONE` and consistent with each other.
+**Done when:** M0.1–M0.6 are `DONE` and consistent with each other. Load `quality` and write the QM section of `QUALITY.md` (Q0) before M1.
 
 ### M1 Product / IA
 Load `design-studio` (strategy, feeling, DNA, architecture) then mobile-design leaves. Write journeys, nav map, screen inventory (every state), content guide, `DNA_LEDGER.md`. Include the demo scenario adapted to the real system.
 **Done when:** M1.1–M1.4 `DONE` and a DNA Card exists.
 
 ### M2 Design system
-Load `design-studio` §§5–6, then frontend-design → expo-design-system → expo-native-ui → theming. Feeling + DNA first. Write the two-pass plan into `DESIGN_SYSTEM.md`. Implement tokens + components (buttons, inputs, search, list rows, cards, status chips with icon+text, stat tiles, simple charts, sheets, dialogs, toasts, segmented controls, skeletons, empty/error/offline, scan overlay, chat, timeline/tree, swipe cards). Gallery in light and dark. Motion via expo-animation. Score with the $26M rubric before calling M2 done (85+/100, no category under 7). Load `react-native-accessibility` for labels, roles, and touch targets.
+Load `design-studio` §§5–6, then frontend-design → expo-design-system → expo-native-ui → theming. Feeling + DNA first. Write the two-pass plan into `DESIGN_SYSTEM.md`. Implement tokens + components (buttons, inputs, search, list rows, cards, status chips with icon+text, stat tiles, simple charts, sheets, dialogs, toasts, segmented controls, skeletons, empty/error/offline, scan overlay, chat, timeline/tree, swipe cards). Gallery in light and dark. Motion via expo-animation. Score with the $26M rubric before calling M2 done (85+/100, no category under 7). Load `quality` and record the QC score in `QUALITY.md`. Load `react-native-accessibility` for labels, roles, and touch targets.
 **Done when:** M2.1–M2.4 `DONE`.
 
 ### M3 Architecture
@@ -157,7 +160,7 @@ Load `masvs-checklist`, then `secure-storage-audit`, `auth-assessment`, `network
 
 ### M7 Tests
 Load `react-native-testing` and `maestro-mobile-testing`. Jest + RNTL + Maestro. Unit, component, integration (test DB), authz per role, offline replay, e2e demo on iOS and Android, web↔mobile parity, edge cases (0812 / +62812 / 62812, duplicate IDs, last-unit race, limit exact/over, weak net, kill mid-sync, expired token, logged-out deep link, time zones). Synthetic data only.
-**Done when:** M7.1–M7.4 `DONE`. Unrun tests = `UNVERIFIED`, not `DONE`.
+**Done when:** M7.1–M7.4 `DONE`. Unrun tests = `UNVERIFIED`, not `DONE`. QC rows in `QUALITY.md` cite those runs.
 
 ### M8 Performance
 Load react-native-best-practices. Measure → fix → re-measure. Sentry + Amplitude. Mid-range Android + iPhone.
@@ -169,19 +172,19 @@ Load eas-app-stores, eas-update, eas-workflows, app-icon; local-build if needed.
 
 ### M10 Demo + handover
 Seed 3 stores, 2 customers, 1 competitor-filled slot. Demo script must run cleanly 3 times from a fresh DB, phone and web side by side. README, architecture, API usage, env setup, release, runbook, final summary (verified / UNVERIFIED / risks).
-**Done when:** M10.1–M10.4 `DONE`.
+**Done when:** M10.1–M10.4 `DONE`. Load `quality`. Q0–Q3 are `DONE` or `BLOCKED`. `RELEASE` is set. `HOLD` means the track is not done.
 
 ## SCREEN DONE CHECK
 Intentional and on-system; every state designed; one-handed at a bright counter and in dark mode; copy actionable; AA + font scale + screen reader + reduced motion; 60fps; no layout jump; skeletons over spinners; primary action obvious in two seconds.
 
 ## FINAL DELIVERABLES
-**Track S:** `DNA_LEDGER.md`, `STUDIO_BRIEF.md`, `SHOWCASE.md`, design system, full screen set with states, prototype or code, rubric ≥85.
+**Track S:** `DNA_LEDGER.md`, `STUDIO_BRIEF.md`, `SHOWCASE.md`, `QUALITY.md` (QM, QA, QC, QI, `RELEASE`), design system, full screen set with states, prototype or code, rubric ≥85.
 **Track P / BOTH:** plus the production set below.
 1. Working iOS + Android app on the real backend; demo scenario passing.
 2. `docs/` M0 six files.
 3. `docs/` M1 four files + `DESIGN_SYSTEM.md`.
 4. `ARCHITECTURE.md`, `SECURITY_REPORT.md`, `TEST_REPORT.md`, `PERFORMANCE_REPORT.md`.
-5. `ASSUMPTIONS.md`, `OPEN_QUESTIONS.md`, `BLOCKERS.md`, `PROGRESS.md`.
+5. `ASSUMPTIONS.md`, `OPEN_QUESTIONS.md`, `BLOCKERS.md`, `PROGRESS.md`, `QUALITY.md`.
 6. Final summary in the agent's last message and in `docs/HANDOVER.md`.
 
 ## START

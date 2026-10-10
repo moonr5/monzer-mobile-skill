@@ -149,6 +149,34 @@ Distance vs prior: __ / 12
 
 Product name, promise, logo direction. Feeling Statement + 5-moment journey. DNA Card (12 axes). Studio Notes (one decision per key role). Design system pointer. Screen list with signature screen marked. QA score. One next step.
 
+## docs/QUALITY.md
+
+Required headings: `## QM`, `## QA`, `## QC`, `## QI`, and a final line `RELEASE = GO` or `RELEASE = HOLD`.
+
+QM table:
+
+```
+| Gate | Applies? | Pass rule | Result | Evidence |
+```
+
+QA table:
+
+```
+| Phase | Check | PASS / FAIL | Evidence |
+```
+
+QC table:
+
+```
+| ID | Severity | Where | Evidence | Status |
+```
+
+Severity is `Critical`, `Major`, or `Minor`. QI table:
+
+```
+| Defect | Root cause | Correction | Preventive check | Re-inspected |
+```
+
 ## docs/HANDOVER.md
 
 Required headings: What was built, Verified with evidence, UNVERIFIED, Blockers still open, Risks, Next steps, How to run web + mobile side by side.

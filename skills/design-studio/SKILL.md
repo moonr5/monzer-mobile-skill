@@ -306,6 +306,8 @@ When this studio is running inside Track P (existing web system), ignore mock-on
 
 ## 9. Critique and QA Gates (Design Critic + Accessibility Lead)
 
+Also load `SKILL_ROOT/skills/quality/SKILL.md`. The rubric below is the design QC score. QM, QA, QC, and QI are recorded in `WORKSPACE/docs/QUALITY.md`. A category under 7 is a Major defect and goes through QI before the score is final.
+
 ### 9.1 The $26M rubric (score each 0-10; ship only at 85+/100 total and no category under 7)
 Feeling fidelity: does every screen deliver the Feeling Statement?
 Distinctiveness: could this be mistaken for a template or earlier output? (Run the distance check again.)
