@@ -26,7 +26,7 @@ Print both paths in one short line, then continue. If SKILL_ROOT is unknown, sea
 1. If `WORKSPACE/docs/PROGRESS.md` exists → read it. Resume at the first row whose status is not `DONE`. Do not restart finished work.
 2. If it does not exist → copy the table from `SKILL_ROOT/references/progress-template.md` to `WORKSPACE/docs/PROGRESS.md`. Create empty `ASSUMPTIONS.md`, `OPEN_QUESTIONS.md`, `BLOCKERS.md` using the tables in `deliverable-templates.md`.
 3. Mark B0–B3 `DONE` with the two absolute paths and the chosen track as evidence.
-4. Start (or continue) the first non-DONE phase. Do not ask "should I continue?"
+4. Load `skills/management/SKILL.md` once. Then start (or continue) the first non-DONE phase. Do not ask "should I continue?"
 
 ### 0.4 Non-stop protocol
 1. Run the chosen track in order in one run. Track S: design-studio phases 0–9. Track P: M0 → M10. Track BOTH: studio 0–6, then M0 and M3–M10. Never skip a row on that track.
@@ -78,6 +78,7 @@ Read a leaf only when the current task needs it. This master wins on product, ph
 
 | Task | Read first (`SKILL_ROOT/skills/…`) |
 | --- | --- |
+| After the track is chosen, before any phase | `management/SKILL.md` — order of work, release authority, which tool to open |
 | Track S, or any unique look / feeling / mockup / screens | `design-studio/SKILL.md` first — then the leaves below |
 | Any Expo/EAS question | `expo-overview/SKILL.md` then the leaf it names |
 | New Expo folders only (no existing layout) | `expo-project-structure/SKILL.md` |
@@ -88,7 +89,9 @@ Read a leaf only when the current task needs it. This master wins on product, ph
 | Navigation | Existing stack first. Expo Router → `expo-router/SKILL.md`. React Navigation → `react-navigation/SKILL.md` |
 | API / cache / offline / four screen states | `expo-data-fetching/SKILL.md` |
 | Lists, images, press, compiler | `react-native-skills/SKILL.md` then the matching `rules/` file |
-| Jank / TTI / bundle / memory | `react-native-best-practices/SKILL.md` |
+| Jank / TTI / bundle / memory | `react-native-best-practices/SKILL.md` then `performance-optimization/SKILL.md` |
+| A failure you cannot explain | `debugging-assistant/SKILL.md` |
+| A QC defect that is a structural code smell | `refactoring-expert/SKILL.md` on that defect only |
 | Custom native build | `expo-dev-client/SKILL.md` |
 | SDK upgrade | `expo-upgrade/SKILL.md` then `upgrading-react-native/SKILL.md` if bare RN |
 | Component tests | `react-native-testing/SKILL.md` (v13 vs v14) |
@@ -99,7 +102,8 @@ Read a leaf only when the current task needs it. This master wins on product, ph
 | AI chat / prompt injection | `prompt-injection-test/SKILL.md` |
 | Web React → native Expo | `expo-web-to-native/SKILL.md` |
 | Bare RN upgrade (not just Expo SDK) | `upgrading-react-native/SKILL.md` |
-| Store submit / OTA / EAS CI | `eas-app-stores`, `eas-update`, `eas-workflows` |
+| Store submit / OTA / EAS CI | `release-management/SKILL.md` then `eas-app-stores`, `eas-update`, `eas-workflows` |
+| Handover, README, API notes | `documentation/SKILL.md` |
 | Local APK / sim .app | `local-build/SKILL.md` |
 | Icons | `app-icon/SKILL.md` |
 | Cloud simulator | `eas-simulator/SKILL.md` |
@@ -169,15 +173,15 @@ Load `react-native-testing` and `maestro-mobile-testing`. Jest + RNTL + Maestro.
 **Done when:** M7.1–M7.4 `DONE`. Unrun tests = `UNVERIFIED`, not `DONE`. QC rows in `QUALITY.md` cite those runs.
 
 ### M8 Performance
-Load react-native-best-practices. Measure → fix → re-measure. Load `sentry-react-native` and `amplitude-expo`. Keys stay in EAS env. Mid-range Android + iPhone.
+Load `management` for the tool order. Measure with `react-native-best-practices`, then `performance-optimization` only for a failed budget. Load `sentry-react-native` and `amplitude-expo`. Keys stay in EAS env. Mid-range Android + iPhone.
 **Done when:** M8.1–M8.3 `DONE`.
 
 ### M9 Release
-Load eas-app-stores, eas-update, eas-workflows, app-icon; local-build if needed. Production profiles, listings, privacy, OTA, force-update, staged rollout, rollback, TestFlight/internal checklist.
+Load `release-management`, then eas-app-stores, eas-update, eas-workflows, app-icon; local-build if needed. `RELEASE = GO` is required. Production profiles, listings, privacy, OTA, force-update, staged rollout, rollback, TestFlight/internal checklist.
 **Done when:** M9.1–M9.3 `DONE`.
 
 ### M10 Demo + handover
-Seed 3 stores, 2 customers, 1 competitor-filled slot. Demo script must run cleanly 3 times from a fresh DB, phone and web side by side. README, architecture, API usage, env setup, release, runbook, final summary (verified / UNVERIFIED / risks).
+Load `documentation`. Seed 3 stores, 2 customers, 1 competitor-filled slot. Demo script must run cleanly 3 times from a fresh DB, phone and web side by side. README, architecture, API usage, env setup, release, runbook, final summary (verified / UNVERIFIED / risks).
 **Done when:** M10.1–M10.4 `DONE`. Load `quality`. Q0–Q3 are `DONE` or `BLOCKED`. `RELEASE` is set. `HOLD` means the track is not done.
 
 ## SCREEN DONE CHECK

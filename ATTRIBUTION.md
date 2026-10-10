@@ -15,6 +15,8 @@ This master skill bundles copies of third-party agent skills so the workflow can
 | `skills/quality` | Original to Monzer. Orchestrates the four quality jobs | — |
 | `skills/qe/` | [RBraga01/Quality-Engineering-Skills](https://github.com/RBraga01/Quality-Engineering-Skills) (ISO audit, DFMEA, PFMEA, DVP, NCR, CAR, 5-Why, fishbone, 8D, PDCA, DMAIC) | MIT (`skills/qe/LICENSE`) |
 | `skills/qa-testing` | [laurenceputra/agent-skills](https://github.com/laurenceputra/agent-skills) `skills/qa-testing` | MIT |
+| `skills/management` | Original to Monzer. Runs order of work, release authority, and which tool to open | — |
+| `skills/release-management`, `documentation`, `debugging-assistant`, `performance-optimization`, `refactoring-expert` | [laurenceputra/agent-skills](https://github.com/laurenceputra/agent-skills) | MIT |
 | `skills/critique-review` | [repath500/critique-review](https://github.com/repath500/critique-review) | MIT |
 | `skills/sentry-react-native` | [getsentry/sentry-agent-skills](https://github.com/getsentry/sentry-agent-skills) `skills/sentry-react-native-sdk` | Apache-2.0 (declared in the skill) |
 | `skills/amplitude-expo` | [amplitude/wizard](https://github.com/amplitude/wizard) `skills/integration/integration-expo` | MIT |

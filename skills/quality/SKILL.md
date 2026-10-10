@@ -46,7 +46,7 @@ Record the quality policy in one sentence, the platforms, the demo journey, and 
 | Performance | N/A for a static mock | Required at M8 | Budgets in `PERFORMANCE_REPORT.md` |
 | Release demo | Showcase board | Required at M10 | Script ran 3×, or each miss is a defect |
 
-Then load `skills/qe/risk-analysis/dfmea-design/SKILL.md`. Write one risk row per primary journey (wrong account data, lost offline write, broken primary action, secret in the app). Use `skills/qe/risk-analysis/action-priority-ap/SKILL.md` only to rank those rows.
+Then load `skills/qe/risk-analysis/dfmea-design/SKILL.md`. Write one risk row per primary journey (wrong account data, lost offline write, broken primary action, secret in the app). Use `skills/qe/risk-analysis/action-priority-ap/SKILL.md` only to rank those rows. Load `skills/qe/agents/fmea-reviewer/SKILL.md` and close the gaps it reports before feature work.
 
 Before `RELEASE = GO`, load `skills/qe/audit/iso-9001-internal-audit/SKILL.md` and `skills/qe/agents/audit-guide/SKILL.md`. Audit only: documented gates, who inspected, nonconformities, corrective actions, and whether the demo is the release evidence. Record the audit result in `## QM`.
 

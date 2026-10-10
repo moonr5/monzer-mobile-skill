@@ -89,7 +89,7 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-  MASTER[Monzer · SKILL.md]
+  MASTER[Monzer · management first]
   MASTER --> EXPO[Expo · UI · data · router]
   MASTER --> DESIGN[design-studio · mobile-design · theming]
   MASTER --> QUALITY[QM audit · QA tests · QC review · QI 8D PDCA]
