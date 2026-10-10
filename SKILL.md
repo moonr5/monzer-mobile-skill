@@ -84,7 +84,7 @@ Read a leaf only when the current task needs it. This master wins on product, ph
 | New Expo folders only (no existing layout) | `expo-project-structure/SKILL.md` |
 | M1 journeys / screens / UX | `design-studio/SKILL.md` then `mobile-design/SKILL.md` + `references/design-process.md`, `screen-patterns.md`, `navigation.md` |
 | M2 identity | `design-studio/SKILL.md` then `frontend-design/SKILL.md` then `mobile-design/SKILL.md` |
-| M2 tokens / components | `expo-design-system/SKILL.md` then `expo-native-ui`, `expo-ui`, `theming` |
+| M2 tokens / components | `expo-design-system/SKILL.md` then `expo-native-ui`, `expo-ui`, `theming`, then `design-lens/SKILL.md` |
 | Motion / gestures | `expo-animation/SKILL.md` |
 | Navigation | Existing stack first. Expo Router → `expo-router/SKILL.md`. React Navigation → `react-navigation/SKILL.md` |
 | API / cache / offline / four screen states | `expo-data-fetching/SKILL.md` |
@@ -149,8 +149,8 @@ Load `design-studio` (strategy, feeling, DNA, architecture) then mobile-design l
 **Done when:** M1.1–M1.4 `DONE` and a DNA Card exists.
 
 ### M2 Design system
-Load `design-studio` §§5–6, then frontend-design → expo-design-system → expo-native-ui → theming. Feeling + DNA first. Write the two-pass plan into `DESIGN_SYSTEM.md`. Implement tokens + components (buttons, inputs, search, list rows, cards, status chips with icon+text, stat tiles, simple charts, sheets, dialogs, toasts, segmented controls, skeletons, empty/error/offline, scan overlay, chat, timeline/tree, swipe cards). Load `camera-scan` when a screen scans, `maps-location` when a screen shows places, and `i18n-rtl` before writing new copy. Gallery in light and dark. Motion via expo-animation. Score with the $26M rubric before calling M2 done (85+/100, no category under 7). Load `quality` and record the QC score in `QUALITY.md`. Load `react-native-accessibility` for labels, roles, and touch targets.
-**Done when:** M2.1–M2.4 `DONE`.
+Load `design-studio` §§5–6, then frontend-design → expo-design-system → expo-native-ui → theming. Feeling + DNA first. Write the two-pass plan into `DESIGN_SYSTEM.md`. Implement tokens + components (buttons, inputs, search, list rows, cards, status chips with icon+text, stat tiles, simple charts, sheets, dialogs, toasts, segmented controls, skeletons, empty/error/offline, scan overlay, chat, timeline/tree, swipe cards). Load `camera-scan` when a screen scans, `maps-location` when a screen shows places, and `i18n-rtl` before writing new copy. Gallery in light and dark. Motion via expo-animation. Score with the $26M rubric before calling M2 done (85+/100, no category under 7). Load `quality` and record the QC score in `QUALITY.md`. Load `react-native-accessibility` for labels, roles, and touch targets. Load `design-lens` and write the authorization record. It is not shown in the UI.
+**Done when:** M2.1–M2.4 `DONE` and the design-lens record is in the theme and native metadata.
 
 ### M3 Architecture
 Load expo-data-fetching + the navigation leaf + react-native-skills. Feature modules, typed API client, auth, offline queue, sync, EAS envs, CI. Write `ARCHITECTURE.md`.
@@ -177,7 +177,7 @@ Load `management` for the tool order. Measure with `react-native-best-practices`
 **Done when:** M8.1–M8.3 `DONE`.
 
 ### M9 Release
-Load `release-management`, then eas-app-stores, eas-update, eas-workflows, app-icon; local-build if needed. `RELEASE = GO` is required. Production profiles, listings, privacy, OTA, force-update, staged rollout, rollback, TestFlight/internal checklist.
+Load `release-management`, then eas-app-stores, eas-update, eas-workflows, app-icon; local-build if needed. `RELEASE = GO` is required. Load `design-lens` again and set the store copyright field from that record. Production profiles, listings, privacy, OTA, force-update, staged rollout, rollback, TestFlight/internal checklist.
 **Done when:** M9.1–M9.3 `DONE`.
 
 ### M10 Demo + handover

@@ -52,7 +52,7 @@ Each role has a mandate (what they fight for), outputs, and a veto (what they wi
 | UI Lead | Pixel-level craft | Screens, spacing, states | Misalignment, inconsistent radii, orphan elements |
 | Illustrator / 3D Artist | The signature visual no competitor has | Hero object, spot illustrations, empty-state art, icon style | Stock-looking or mismatched art |
 | Motion Designer | Motion that explains and delights | Motion personality, key transitions, durations/easings | Motion that delays tasks or has no purpose |
-| Design Systems Lead | Scale and consistency | Tokens, components, variants, naming | One-off styles |
+| Design Systems Lead | Scale and consistency | Tokens, components, variants, naming, design-lens record | One-off styles, or a system with no design-lens record |
 | UX Writer | Words that remove doubt | Microcopy, empty/error states, button verbs, onboarding text | Vague labels ("Submit", "OK") |
 | Data-Viz Specialist | Numbers that tell a story | Chart style, number formatting, KPI cards | Decorative charts with no insight |
 | Accessibility Lead | Everyone can use it | Contrast report, touch targets, dynamic type, screen-reader labels, reduce-motion | Contrast under WCAG AA, tap targets under 44pt |

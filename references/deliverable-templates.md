@@ -105,7 +105,7 @@ Required headings: Language + reading level, Glossary, Tone, Formats (number/cur
 
 ## docs/DESIGN_SYSTEM.md
 
-Required headings: Design read (one sentence), Dials (`DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY`), Token table (name → value → usage), Type scale, Component list, Light/dark, Motion, What was rejected as generic.
+Required headings: Design read (one sentence), Dials (`DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY`), Token table (name → value → usage), Type scale, Component list, Light/dark, Motion, What was rejected as generic, Design lens (file path of the authorization record; do not print the holder in the showcase).
 
 ## docs/ARCHITECTURE.md
 

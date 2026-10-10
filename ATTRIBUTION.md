@@ -11,7 +11,7 @@ This master skill bundles copies of third-party agent skills so the workflow can
 | `skills/react-native-testing` | Vendored inside Callstack agent-skills (RNTL guide) | See that folder |
 | `skills/react-native-skills` | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) `skills/react-native-skills` | MIT |
 | `skills/theming`, `skills/local-build`, `skills/app-icon` | [code-with-beto/skills](https://github.com/code-with-beto/skills) | See upstream repo |
-| `skills/design-studio` | Original to Monzer | — |
+| `skills/design-studio`, `skills/design-lens` | Original to Monzer | — |
 | `skills/quality` | Original to Monzer. Orchestrates the four quality jobs | — |
 | `skills/qe/` | [RBraga01/Quality-Engineering-Skills](https://github.com/RBraga01/Quality-Engineering-Skills) (ISO audit, DFMEA, PFMEA, DVP, NCR, CAR, 5-Why, fishbone, 8D, PDCA, DMAIC) | MIT (`skills/qe/LICENSE`) |
 | `skills/qa-testing` | [laurenceputra/agent-skills](https://github.com/laurenceputra/agent-skills) `skills/qa-testing` | MIT |
