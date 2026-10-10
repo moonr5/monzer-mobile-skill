@@ -45,7 +45,8 @@ Read this file fully and obey it as the only workflow:
 SKILL_ROOT = that folder.
 WORKSPACE = this repo (the existing web app / backend / any existing mobile app).
 
-Execute phases M0 through M10 without stopping. Write docs under WORKSPACE/docs/.
+Print TRACK = S, P, or BOTH, then run that track without stopping.
+Studio writes the design docs. Production writes docs under WORKSPACE/docs/.
 If you are interrupted, reopen SKILL.md and resume from the first non-DONE row in docs/PROGRESS.md.
 ```
 

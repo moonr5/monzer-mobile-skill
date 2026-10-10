@@ -29,7 +29,7 @@ Print both paths in one short line, then continue. If SKILL_ROOT is unknown, sea
 4. Start (or continue) the first non-DONE phase. Do not ask "should I continue?"
 
 ### 0.4 Non-stop protocol
-1. Execute M0 → M10 in order in one run. Never skip a row.
+1. Run the chosen track in order in one run. Track S: design-studio phases 0–9. Track P: M0 → M10. Track BOTH: studio 0–6, then M0 and M3–M10. Never skip a row on that track.
 2. Impossible step → log in `BLOCKERS.md`, apply the safest workaround, mark `BLOCKED`, continue.
 3. No TODOs, placeholders, lorem, mock-only screens, or half-built features in scope.
 4. Ambiguity → safest assumption in `ASSUMPTIONS.md`, keep going. Ask the user only if a decision is irreversible AND could reasonably go either way; finish everything else first.

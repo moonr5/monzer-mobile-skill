@@ -2,7 +2,7 @@
   <title id="t">Phases M0 to M10</title>
   <desc id="d">Non-stop workflow from discovery through demo.</desc>
   <rect width="1100" height="280" fill="#F6F3EC"/>
-  <text x="550" y="36" fill="#1A1814" font-family="Georgia, serif" font-size="20" text-anchor="middle">M0 ’ M10 · do not stop</text>
+  <text x="550" y="36" fill="#1A1814" font-family="Georgia, serif" font-size="20" text-anchor="middle">M0 to M10. Do not stop.</text>
   <g font-family="ui-sans-serif, system-ui" font-size="11" text-anchor="middle">
     <rect x="24" y="80" width="84" height="88" rx="10" fill="#1A1814"/><text x="66" y="118" fill="#F6F3EC">M0</text><text x="66" y="140" fill="#C6A15B">Discover</text>
     <rect x="120" y="80" width="84" height="88" rx="10" fill="#1A1814"/><text x="162" y="118" fill="#F6F3EC">M1</text><text x="162" y="140" fill="#C6A15B">Journeys</text>
@@ -17,5 +17,5 @@
     <rect x="984" y="80" width="92" height="88" rx="10" fill="#1A1814"/><text x="1030" y="118" fill="#F6F3EC">M10</text><text x="1030" y="140" fill="#C6A15B">Demo</text>
   </g>
   <text x="550" y="216" fill="#5A564C" font-family="ui-sans-serif, system-ui" font-size="14" text-anchor="middle">Resume from the first non-DONE row in docs/PROGRESS.md</text>
-  <text x="550" y="248" fill="#8A8478" font-family="ui-sans-serif, system-ui" font-size="13" text-anchor="middle">Never ask should I continue? · never restart finished work</text>
+  <text x="550" y="248" fill="#8A8478" font-family="ui-sans-serif, system-ui" font-size="13" text-anchor="middle">Never ask whether to continue. Never restart finished work.</text>
 </svg>

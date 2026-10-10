@@ -1,6 +1,6 @@
 # Monzer
 
-**One master skill. Two tracks.**
+**One master skill. Three tracks.**
 
 - **Studio** — "make me an app", screens, mockup, prototype. A $26M-class studio. Feeling first. Never the same look twice.
 - **Production** — Expo client of your **existing** web system. Same accounts, same API, same database.
@@ -37,48 +37,13 @@ Read this file fully and obey it as the only workflow:
 https://raw.githubusercontent.com/moonr5/monzer-mobile-skill/main/SKILL.md
 
 Or clone the repo and set SKILL_ROOT to that folder.
-WORKSPACE = this product repo (existing web app + backend).
+WORKSPACE = this product repo.
 
-Execute M0 through M10 without stopping.
-Write docs under WORKSPACE/docs/.
+Print TRACK = S, P, or BOTH, then run that track without stopping.
+Studio writes the design docs. Production writes docs under WORKSPACE/docs/.
 ```
 
 Install into your own skills folder: see [INSTALL.md](INSTALL.md).
-
----
-
-## Contributors
-
-**Author:** [Monzer](https://github.com/moonr5) (`@moonr5`)
-
-Cursor is a git contributor (`Co-authored-by: Cursor`). The other agents are hosts of the same skill — they are credited here so the repo is not Cursor-only.
-
-<p align="center"><img src="docs/images/contributors.svg" alt="Monzer author, Cursor contributor, Claude Codex Copilot Windsurf agents" width="920"></p>
-
-<p align="center">
-  <a href="https://github.com/moonr5"><img src="https://github.com/moonr5.png?size=96" width="72" height="72" alt="Monzer"></a>
-  &nbsp;
-  <a href="https://github.com/cursoragent"><img src="https://github.com/cursoragent.png?size=96" width="72" height="72" alt="Cursor"></a>
-  &nbsp;
-  <a href="https://github.com/anthropics"><img src="https://github.com/anthropics.png?size=96" width="72" height="72" alt="Claude"></a>
-  &nbsp;
-  <a href="https://github.com/openai"><img src="https://github.com/openai.png?size=96" width="72" height="72" alt="Codex"></a>
-  &nbsp;
-  <a href="https://github.com/features/copilot"><img src="https://github.com/github.png?size=96" width="72" height="72" alt="Copilot"></a>
-  &nbsp;
-  <a href="https://github.com/Exafunction"><img src="https://github.com/Exafunction.png?size=96" width="72" height="72" alt="Windsurf"></a>
-</p>
-
-| Who | Role |
-| --- | --- |
-| [Monzer](https://github.com/moonr5) | Author |
-| [Cursor](https://github.com/cursoragent) | Agent contributor |
-| [Claude Code](https://claude.com/claude-code) | Agent host |
-| [OpenAI Codex](https://developers.openai.com/codex) | Agent host |
-| [GitHub Copilot](https://github.com/features/copilot) | Agent host |
-| [Windsurf](https://windsurf.com) | Agent host |
-
-Full table and install paths: [CONTRIBUTORS.md](CONTRIBUTORS.md) · [INSTALL.md](INSTALL.md).
 
 ---
 
@@ -126,10 +91,10 @@ flowchart LR
 flowchart TB
   MASTER[Monzer · SKILL.md]
   MASTER --> EXPO[Expo · UI · data · router]
-  MASTER --> DESIGN[mobile-design · frontend-design · theming]
-  MASTER --> QUALITY[testing · best-practices · RN skills]
+  MASTER --> DESIGN[design-studio · mobile-design · theming]
+  MASTER --> QUALITY[Maestro · a11y · tests · RN skills]
   MASTER --> SHIP[EAS · local-build · app-icon]
-  MASTER --> RULES[one DB · MASVS · PROGRESS.md]
+  MASTER --> RULES[one DB · MASVS · secrets · PROGRESS.md]
 ```
 
 Full visual map with clickable mermaid: [docs/VISUAL.md](docs/VISUAL.md).
@@ -161,5 +126,30 @@ CONTRIBUTORS.md          ← author + Cursor + the other agents
 docs/images/             ← posters + SVG diagrams
 docs/VISUAL.md           ← interactive mermaid map
 references/              ← PROGRESS + deliverable templates
-skills/                  ← bundled leaves
+skills/                  ← 34 bundled leaves
 ```
+
+---
+
+## Contributors
+
+**Author:** [Monzer](https://github.com/moonr5)
+
+<p align="center"><img src="docs/images/contributors.svg" alt="Monzer is the author. Cursor, Claude Code, Codex, Copilot, and Windsurf run the same skill." width="920"></p>
+
+<p align="center">
+  <a href="https://github.com/moonr5"><img src="https://github.com/moonr5.png?size=96" width="64" height="64" alt="Monzer"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/cursoragent"><img src="https://github.com/cursoragent.png?size=96" width="64" height="64" alt="Cursor"></a>
+</p>
+
+| Who | On this repo |
+| --- | --- |
+| [Monzer](https://github.com/moonr5) | Author |
+| [Cursor](https://github.com/cursoragent) | Git contributor and host |
+| [Claude Code](https://claude.com/claude-code) | Host |
+| [OpenAI Codex](https://developers.openai.com/codex) | Host |
+| [GitHub Copilot](https://github.com/features/copilot) | Host |
+| [Windsurf](https://windsurf.com) | Host |
+
+Install paths: [CONTRIBUTORS.md](CONTRIBUTORS.md) · [INSTALL.md](INSTALL.md). Leaf authors: [ATTRIBUTION.md](ATTRIBUTION.md).
